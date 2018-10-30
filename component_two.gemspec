@@ -8,15 +8,15 @@ Gem::Specification.new do |s|
   s.name        = "component_two"
   s.version     = ComponentTwo::VERSION
   s.authors     = ["Pedro Paiva"]
-  s.email       = ["pedro.paiva@fractaltecnologia.com.br"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ComponentTwo."
-  s.description = "TODO: Description of ComponentTwo."
+  s.email       = ["pedro.paiva@example.com.br"]
+  s.summary     = "Summary of ComponentTwo."
+  s.description = "Description of ComponentTwo."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 5.2.1"
+  s.add_dependency "component_one"
 
   s.add_development_dependency "sqlite3"
 end
